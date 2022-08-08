@@ -61,18 +61,19 @@
 //  element,
 //  document.getElementById('root')
 // )
-let root = document.getElementById('root')
 
-const Navbar = (
- <div>
-  <h1>Brand</h1>
-  <ul>
-   <li>Pricing</li>
-   <li>About</li>
-   <li>Contact</li>
-  </ul>
- </div>
-)
 
-ReactDOM.render( Navbar, root )
+// let root = document.getElementById('root');
 
+// const navbar = (
+//  <div>
+//   <h1>Brand</h1>
+//   <ul>
+//    <li>Pricing</li>
+//    <li>About</li>
+//    <li>Contact</li>
+//   </ul>
+//  </div>
+// )
+
+// ReactDOM.render( navbar, root )

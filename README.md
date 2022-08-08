@@ -21,3 +21,14 @@ Throughout this course i will build several projects as a way to fully understan
   root.append(h1)
   h1.setAttribute('class', 'header')
   h1.append('Hello, How are you angel?')
+
+- to set up a default react app run:
+
+```
+  npx create-react-app [name of app folder]
+```
+
+- Declarative:
+  means i can tell the computer WHAT to do and expect it to handle the details.
+- Imperative:
+  means i need to tell it HOW to do each step.
