@@ -5,7 +5,8 @@
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-nav {
+/* airbnb clone */
+/* nav {
  display: flex;
  height: auto;
  background-color: white;
@@ -69,4 +70,55 @@ section {
 
 .bold {
  font-weight: bold;
+} */
+
+.App {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.contacts {
+ width: 15rem;
+ height: 22rem;
+ margin: 1rem;
+ padding: 1rem;
+ background-color: #eee;
+ border-radius: 10px;
+ box-shadow: 5px 5px 10px black;
+}
+
+.contact-card {
+ padding-bottom: .5rem;
+}
+
+.contact-card img {
+ width: 100%;
+ border-radius: 10px;
+}
+
+.info-group {
+ display: flex;
+ padding-bottom: .5rem;
+}
+
+.info-group img {
+ width: 1.5rem;
+}
+
+.jokes-container {
+ width: 15rem;
+  height: 22rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.jokes-container p {
+ color: white;
+ background-color: #1e1e1e;
+ margin-bottom: 10px;
+ padding: 10px;
+ border-radius: 10px;
 }
