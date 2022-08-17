@@ -6,7 +6,7 @@
 }
 
 /* airbnb clone */
-/* nav {
+nav {
  display: flex;
  height: auto;
  background-color: white;
@@ -45,8 +45,14 @@ section {
 }
 
 .card {
- width: 175px;
+ width: 200px;
+ height: auto;
  font-size: 12px;
+ margin: 1rem;
+ padding: 10px;
+ background-color: #eee;
+ border-radius: 10px;
+ box-shadow: 5px 5px 10px black;
 }
 
 .card--image {
@@ -70,9 +76,20 @@ section {
 
 .bold {
  font-weight: bold;
-} */
+}
 
-.App {
+span {
+ font-size: 1rem;
+}
+
+.card > p {
+ font-size: 1rem;
+ margin-bottom: 5px;
+}
+
+
+/* other code */
+/* .App {
  display: flex;
  flex-wrap: wrap;
 }
@@ -121,4 +138,4 @@ section {
  margin-bottom: 10px;
  padding: 10px;
  border-radius: 10px;
-}
+} */

@@ -1,16 +1,18 @@
-import Newimage from '../images/man_smoke.jpg'
+// Section 1.0
+
 
 export default function Cards(props) {
+ // console.log(props)
  return (
   <div className='card'>
    <div className='card--stats'>
-   <img src={Newimage} className='card--image' />
-   <span src="#">5.0</span>
-   <span className='gray'>(6) .</span>
-   <span className='gray'>USA</span>
+   <img src={props.img} className='card--image' />
+   <span>{props.rating}</span>
+   <span className='gray'>{props.reviewCount} • </span>
+   <span className='gray'>{props.country}</span>
    </div>
-   <p>Life Lessons with Katie Zaferes</p>
-   <p><span className='bold'>From $136</span> / person</p>
+   <p>{props.title}</p>
+   <p><span className='bold'>From ${props.price}</span> / person</p>
   </div>
  )
 }
