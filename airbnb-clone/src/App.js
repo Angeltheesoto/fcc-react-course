@@ -33,6 +33,7 @@ function App(props) {
       <Card
         key={item.id}
         item={item}
+        // or use the spread operator = {...item} : then you would have to remove item from the framwork in Cards.js
         // img={item.coverImg}
         // rating={item.stats.rating}
         // reviewCount={item.stats.reviewCount}
