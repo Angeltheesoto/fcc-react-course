@@ -1,0 +1,32 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+ max-width: 100%;
+ height: 4rem;
+ background-color: crimson;
+ margin: 5px 5px 3rem 5px;
+ border-radius: 10px 10px 0 0;
+ border: none;
+}
+
+.title p {
+ color: white;
+ text-align: center;
+ padding-top: 7px;
+ font-size: 2rem;
+}
+
+.space {
+ margin-bottom: 1rem;
+}
+
+.date {
+ margin-bottom: -0.9px;
+ font-size: 15px;
+ color: gray;
+}
