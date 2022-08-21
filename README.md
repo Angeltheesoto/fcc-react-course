@@ -32,3 +32,14 @@ Throughout this course i will build several projects as a way to fully understan
   means i can tell the computer WHAT to do and expect it to handle the details.
 - Imperative:
   means i need to tell it HOW to do each step.
+
+- Props: refers to the properties being passed into a component in order for it to work correctly, similar to how a function receives parameters: "from above." A component receiving props is not allowed to modify those props.
+  (I.e. they are "immutable.")
+  short answer: shouldn't be changing. The way things are currently are. Are like props.
+
+- State: refers to the values that are managed by the component, similar to variables declared inside a function. Any time you have a changing values that should be saved/ displayed, you'll likely be using state.
+  short answer: should be changing. Its like declaring new variables that change when something happening.
+
+- immutable: means it is unchanging like props.
+
+-

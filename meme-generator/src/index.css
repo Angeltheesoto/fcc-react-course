@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content-container {
+  padding: 3rem 5rem;
+}
+
+/* header */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  background-image: linear-gradient(to right, rgb(109, 6, 150), rgb(128, 74, 216));
+  color: white;
+  align-items: center;
+}
+
+.img-container {
+  display: flex;
+}
+
+.header-container img {
+  width: 3rem;
+  margin-right: 10px;
+}
+
+/* form */
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+}
+
+.label-container {
+  width: 100%;
+  display: flex;
+}
+
+.label-container label {
+  width: 100%;
+  align-items: center;
+  padding: 5px;
+  font-size: 1.5rem;
+  /* makes text a different color */
+  background-image: linear-gradient(to right, rgb(109, 6, 150), rgb(128, 74, 216));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.input-container input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.top {
+  width: 90%!important;
+  margin-right: 5%;
+}
+
+.form button {
+  flex-basis: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+  border-radius: 5px;
+  border: 1px;
+  background-image: linear-gradient(to right, rgb(109, 6, 150), rgb(128, 74, 216));
+  color: white;
+  cursor: pointer;
+}
+
+
+/* forms */
+
+/* image */
