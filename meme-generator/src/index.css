@@ -85,7 +85,65 @@
   cursor: pointer;
 }
 
+.meme-img-container {
+  margin: 0 auto;
+}
+
+.meme-img-container img {
+  width: 100%;
+}
 
 /* forms */
 
-/* image */
+/* challenge */
+
+.number-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.number {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+}
+
+.number p {
+  margin-top: -5px;
+}
+
+.minus {
+  position: absolute;
+  margin-left: -8rem;
+  margin-top: 3rem;
+
+
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem;
+  background-color: gray;
+  color: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.plus {
+  margin-left: -1rem;
+  margin-top: 3rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem;
+  background-color: gray;
+  color: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
