@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import Count from "./Count"
+import Star from './Star'
+import TestHeader from './TestHeader'
+import TestBody from './TestBody'
 
 export default function Testing() {
 
@@ -37,6 +41,10 @@ export default function Testing() {
   //   // ... pass a function instead of using state directly when changing a prev value of state ...
   //   event.currentTarget.classList.contains('plus') ? setNumber(prevNumber => prevNumber + 1) : setNumber(prevNumber => prevNumber - 1)
   // }
+  // const [count, setCount] = useState(0)
+  // function add() {setCount(prevCount => prevCount + 1)}
+  // function subtract() {setCount(prevCount => prevCount - 1)}
+
 
   // const [ isGoingOut, setIsGoingOut ] = useState(true)
   // const yesNo = () => {
@@ -45,46 +53,44 @@ export default function Testing() {
   // }
 // CUT OFF = GOING INVERSE
 
-const [contact, setContact] = useState({
-  firstName: "John",
-  lastName: "Doe",
-  phone: '+1 (719) 555-1212',
-  email: "itsmyrealname@example.com",
-  isFavorite: false
-})
+// const [contact, setContact] = useState({
+//   firstName: "John",
+//   lastName: "Doe",
+//   phone: '+1 (719) 555-1212',
+//   email: "itsmyrealname@example.com",
+//   isFavorite: false
+// })
+// let starIcon = contact.isFavorite ? '⭐' : '✩';
+  // function toggleFavorite() {
+  //   setContact(prevContact => {
+  //     return {
+  //       ...prevContact,
+  //       isFavorite: !prevContact.isFavorite
+  //     }
+  //   })
+  // }
 
-let starIcon = contact.isFavorite ? '⭐' : '✩';
-
-function toggleFavorite() {
-  setContact(prevContact => {
-    return {
-      ...prevContact,
-      isFavorite: !prevContact.isFavorite
-    }
-  })
-}
+ const [user, setUser] = useState('Angel')
 
 	// ⭐✩
  return (
   <div>
+    <br/>
+    <TestHeader user={user} />
+    <TestBody user={user} />
 
-    <span></span>
-    <div>
-      <span
+    {/* <div> */}
+      {/* <span
         style={{'fontSize': '2rem', 'cursor': 'pointer'}}
         onClick={toggleFavorite}
-      >{starIcon}</span>
+      >{starIcon}</span> */}
+      {/* <Star isFilled={contact.isFavorite} handleClick={toggleFavorite} />
       <h2>
         {contact.firstName} {contact.lastName}
       </h2>
       <p>{contact.phone}</p>
       <p>{contact.email}</p>
-    </div>
-
-
-
-
-
+    </div> */}
 
 {/* // CUT OFF = GOING INVERSE */}
 
@@ -99,13 +105,13 @@ function toggleFavorite() {
    </div> */}
 
    {/* <div className='number-container'>
-    <span className='number'><p>{number}</p></span>
-    <div className='minus' onClick={equation}>
+    <Count number={count} />
+    <div className='minus' onClick={subtract}>
       <span>
         -
       </span>
     </div>
-    <div className='plus' onClick={equation}>
+    <div className='plus' onClick={add}>
       <span>
         +
       </span>

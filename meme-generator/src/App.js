@@ -1,7 +1,7 @@
 
 import Header from "./components/Header";
 import Meme from "./components/Meme";
-// import Testing from "./components/testing";
+import Testing from "./components/testing";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <div className="content-container">
         <Meme />  
 
-      {/* <Testing /> */}
+      <Testing />
       </div>
     </div>
   );

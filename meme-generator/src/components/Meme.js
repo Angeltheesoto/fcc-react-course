@@ -3,14 +3,25 @@ import memesData from "./memesData"
 
 export default function Meme() {
 
-  const [ memeImage, setMemeImage ] = useState('')
+  // const [ memeImage, setMemeImage ] = useState('')
+  const [meme, setMeme] = useState({
+    topText: '',
+    bottomText: '',
+    randomImage: 'http://i.imgflip.com/1bij.jpg'
+  })
+  const [allMemeImages, setAllMemeImages] = useState(memesData)
 
  function handleClick() {
-   const memesArray = memesData.data.memes
+   const memesArray = allMemeImages.data.memes
    const randomNumber = Math.floor(Math.random() * memesArray.length)
    const url = memesArray[randomNumber].url;
-   setMemeImage(url)
+   setMeme(prevMeme => ({
+    ...prevMeme,
+    randomImage: url
+   }))
   }
+
+
   
  return (
   <main >
@@ -24,7 +35,7 @@ export default function Meme() {
      <input type="text" name="bottom" placeholder="and take my money" />
     </div>
     <button type="button" onClick={handleClick}>Get a new meme image</button>
-    <div className='meme-img-container'><img src={memeImage} /></div>
+    <div className='meme-img-container'><img src={meme.randomImage} /></div>
    </div>
   </main>
  )
