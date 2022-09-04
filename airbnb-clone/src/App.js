@@ -1,31 +1,31 @@
 //  Section 1.0
 // Components
-import React from 'react'
+import {React, useState} from 'react'
 import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
 // import Challenge from "./components/Challenge";
 import Card from './components/Cards'
 import Data from "./components/data";
-console.log(typeof(Data))
+// console.log(typeof(Data))
 
 // images
 // import Newimage from './images/man_smoke.jpg'
 
 // Section 1.1
 // import Contacts from "./components/Contacts";
-// import Jokes from "./components/Jokes";
-// import JokesData from "./components/JokesData";
+import Jokes from "./components/Jokes";
+import JokesData from "./components/JokesData";
 
 
 function App(props) {
   // Section 1.1
   // console.log(JokesData)
-  // const jokeElements = JokesData.map((joke) => {
-  //   return <Jokes 
-  //     setup={joke.setup}
-  //     punchline={joke.punchline}
-  //   />
-  // })
+  const jokeElements = JokesData.map((joke) => {
+    return <Jokes 
+      setup={joke.setup}
+      punchline={joke.punchline}
+    />
+  })
 
   // Section 1.0
   const Cards = Data.map( (item) => {
@@ -45,6 +45,10 @@ function App(props) {
     )
   })
 
+  const [messages, setMessages] = useState([])
+
+  
+
   return (
     <div className="App">
       {/* section 1.0 */}
@@ -58,7 +62,13 @@ function App(props) {
       {/* <Challenge /> */}
 
       {/* Section 1.1 */}
-      {/* {jokeElements} */}
+      {jokeElements}
+      <div>
+        {
+          messages.length > 0 &&
+          <h1>You have {messages.length} unread messages!</h1>
+        }
+      </div>
       {/* <Contacts
         img='https://th.bing.com/th/id/R.db197cadf38d4731649560829d74ec6f?rik=DtbsnmFTCVXF%2fA&riu=http%3a%2f%2fnews.uoguelph.ca%2fwp-content%2fuploads%2f2016%2f11%2fcat-e1478099247797.jpg&ehk=%2fvNUN2OBPxT57U6L9lyg2msIa4HItQwIEW%2btGQKw2Zs%3d&risl=&pid=ImgRaw&r=0'
         name="Mr. Whislerson"

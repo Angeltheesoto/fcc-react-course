@@ -93,6 +93,28 @@
   width: 100%;
 }
 
+.meme-container {
+  position: relative;
+}
+
+
+.meme--text {
+  position: absolute;
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.top {
+  top: 1px;
+}
+
+.bottom {
+  bottom: 1px;
+}
+
 /* forms */
 
 /* challenge */
@@ -146,4 +168,13 @@
   color: white;
   border-radius: 100%;
   cursor: pointer;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 5px;
 }

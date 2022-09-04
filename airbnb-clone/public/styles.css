@@ -111,7 +111,7 @@ span {
 
 
 /* other code */
-/* .App {
+ .App {
  display: flex;
  flex-wrap: wrap;
 }
@@ -160,4 +160,18 @@ span {
  margin-bottom: 10px;
  padding: 10px;
  border-radius: 10px;
-} */
+} 
+
+.toggle {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  background-color: #1e1e1e;
+  color: white;
+}
