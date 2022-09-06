@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Count from "./Count"
 import Star from './Star'
 import TestHeader from './TestHeader'
 import TestBody from './TestBody'
 import testBoxes from './testBoxes'
 import Box from './testBox'
+import WindowTracker from './WindowTracker'
 
 export default function Testing(props) {
 
@@ -135,11 +136,23 @@ export default function Testing(props) {
   //     console.log(`Thanks for signing up for our newsletter!`)
   //   }
   // }
-
 	// ⭐✩
+
+
+  const [show, setShow] = useState(true);
+  function handleClick() {
+    setShow((prevShow) => {
+      return prevShow ? false : true 
+    })
+    console.log(show)
+  }
+
   return (
   <div>
     <br/>
+
+    <button onClick={handleClick}>Toggle window Tracker</button>
+    {show === true ? <WindowTracker/> : null}
 
     {/* <form onSubmit={handleSubmit}> 
     <h1>Join Today</h1>
