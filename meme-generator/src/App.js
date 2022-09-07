@@ -48,6 +48,7 @@ function App() {
   //     .then(data => setStarWarsData(data))
   // }, [count]) // dependencies array
 
+
   return (
     <div className="App">
       <Header />
