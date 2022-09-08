@@ -6,7 +6,7 @@ function Main(props) {
         backgroundColor: props.colorSwitch ? '' : 'white'
       }}
     >
-    <h3 id={props.colorSwitch ? 'white' : 'black'}>
+    <h3 id={props.colorSwitch ? '' : 'black2'}>
       Fun facts about React
     </h3>
     <ul id={props.colorSwitch ? 'white' : 'black'}>

@@ -41,6 +41,7 @@ h2 {
 h3 {
  font-size: 3rem;
  margin-bottom: 1rem;
+ color: white;
 }
 
 .main-container{
@@ -67,11 +68,11 @@ li::before {
 }
 
 .background-logo {
-width: 20rem;
-right: -10rem;
--webkit-filter: grayscale(100%);
- filter: grayscale(100%);
- opacity: 10%;
+  width: 20rem;
+  right: -10rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 10%;
 }
 
 .bgimg-container {
@@ -122,6 +123,10 @@ right: -10rem;
   color: black;
 }
 
-#white li{
+#white li {
   color: white;
+}
+
+#black2 {
+  color: black;
 }
